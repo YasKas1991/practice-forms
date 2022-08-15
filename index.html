@@ -12,19 +12,37 @@
     <link rel="stylesheet" href="./src/style.css" />
   </head>
 
-  <body>
-    <h1>Login/Registration</h1>
+  <body class="flex flex-col items-center">
+    <h1 class="my-6 text-3xl text-red-500">Login/Registration</h1>
 
-    <form>
+    <form
+      class="borde p-4e flex w-80 flex-col items-center gap-4 rounded border"
+    >
       <div>
         <label for="username">username</label>
-        <input type="text" name="" id="username" />
+        <input type="text" name="" id="username" placeholder=" Username" autofocus />
+
       </div>
       <div>
-        <label for="password">Password</label>
-        <input type="text" name="" id="password" />
+       <input type="checkbox"id="save-username"/>
+       <label for="save-username" class= "not-sr-only m1-2"
+       >Save username
+      </label>
       </div>
-      <button type="submit">Submit</button>
+       <div>
+        <label for="password">Password</label>
+        <input type="password" name="" id="password" placeholder=" Password" />
+      </div>
+
+
+      </div>
+      <button
+        type="submit"
+        class="rounded bg-green-500 px-4 py-2 text-white transition"
+      >
+        Submit
+      </button>
     </form>
   </body>
+  <script src="src/index.js"></script>
 </html>
